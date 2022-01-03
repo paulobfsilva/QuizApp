@@ -7,18 +7,20 @@
 
 import UIKit
 
-class QuestionViewController: UIViewController, UITableViewDataSource {
+class QuestionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     private var question = ""
     private var options = [String]()
+    private var selection: ((String) -> Void)? = nil
     private let reuseIdentifier = "Cell"
     
-    convenience init(question: String, options: [String]) {
+    convenience init(question: String, options: [String], selection: @escaping (String) -> Void) {
         self.init()
         self.question = question
         self.options = options
+        self.selection = selection
     }
     
     override func viewDidLoad() {
@@ -41,6 +43,10 @@ class QuestionViewController: UIViewController, UITableViewDataSource {
             return cell
         }
         return UITableViewCell(style: .default, reuseIdentifier: reuseIdentifier)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selection?(options[indexPath.row])
     }
     
 }
