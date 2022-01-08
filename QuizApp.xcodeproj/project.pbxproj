@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		5163729427864D77006B7948 /* CorrectAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5163729327864D77006B7948 /* CorrectAnswerCell.xib */; };
 		5163729627865260006B7948 /* WrongAnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 516372952786525F006B7948 /* WrongAnswerCell.xib */; };
+		517A65CE2789E07A00FCFC5A /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517A65CD2789E07A00FCFC5A /* UITableViewExtensions.swift */; };
+		517A65D02789E0B200FCFC5A /* PresentableAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517A65CF2789E0B200FCFC5A /* PresentableAnswer.swift */; };
+		517A65D22789E0EC00FCFC5A /* CorrectAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517A65D12789E0EC00FCFC5A /* CorrectAnswerCell.swift */; };
+		517A65D42789E10B00FCFC5A /* WrongAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517A65D32789E10B00FCFC5A /* WrongAnswerCell.swift */; };
 		51808E352782605B007E875A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51808E342782605B007E875A /* AppDelegate.swift */; };
 		51808E3E2782605C007E875A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51808E3D2782605C007E875A /* Assets.xcassets */; };
 		51808E412782605C007E875A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51808E3F2782605C007E875A /* LaunchScreen.storyboard */; };
@@ -42,6 +46,10 @@
 /* Begin PBXFileReference section */
 		5163729327864D77006B7948 /* CorrectAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CorrectAnswerCell.xib; sourceTree = "<group>"; };
 		516372952786525F006B7948 /* WrongAnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WrongAnswerCell.xib; sourceTree = "<group>"; };
+		517A65CD2789E07A00FCFC5A /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		517A65CF2789E0B200FCFC5A /* PresentableAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentableAnswer.swift; sourceTree = "<group>"; };
+		517A65D12789E0EC00FCFC5A /* CorrectAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectAnswerCell.swift; sourceTree = "<group>"; };
+		517A65D32789E10B00FCFC5A /* WrongAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongAnswerCell.swift; sourceTree = "<group>"; };
 		51808E312782605B007E875A /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51808E342782605B007E875A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51808E3D2782605C007E875A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +125,10 @@
 				51808E702784D982007E875A /* ResultsViewController.xib */,
 				5163729327864D77006B7948 /* CorrectAnswerCell.xib */,
 				516372952786525F006B7948 /* WrongAnswerCell.xib */,
+				517A65CD2789E07A00FCFC5A /* UITableViewExtensions.swift */,
+				517A65CF2789E0B200FCFC5A /* PresentableAnswer.swift */,
+				517A65D12789E0EC00FCFC5A /* CorrectAnswerCell.swift */,
+				517A65D32789E10B00FCFC5A /* WrongAnswerCell.swift */,
 			);
 			path = QuizApp;
 			sourceTree = "<group>";
@@ -266,8 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517A65CE2789E07A00FCFC5A /* UITableViewExtensions.swift in Sources */,
 				51808E352782605B007E875A /* AppDelegate.swift in Sources */,
+				517A65D22789E0EC00FCFC5A /* CorrectAnswerCell.swift in Sources */,
 				51808E67278261B1007E875A /* QuestionViewController.swift in Sources */,
+				517A65D02789E0B200FCFC5A /* PresentableAnswer.swift in Sources */,
+				517A65D42789E10B00FCFC5A /* WrongAnswerCell.swift in Sources */,
 				51808E6B2783B465007E875A /* SceneDelegate.swift in Sources */,
 				51808E6F2784D8F5007E875A /* ResultsViewController.swift in Sources */,
 			);
